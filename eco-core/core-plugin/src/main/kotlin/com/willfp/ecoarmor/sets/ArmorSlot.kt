@@ -29,6 +29,7 @@ enum class ArmorSlot(
         fun getSlot(name: String): ArmorSlot? {
             return when (name.lowercase(Locale.getDefault())) {
                 "helmet" -> HELMET
+                "player_head" -> HELMET
                 "chestplate" -> CHESTPLATE
                 "elytra" -> ELYTRA
                 "leggings" -> LEGGINGS
